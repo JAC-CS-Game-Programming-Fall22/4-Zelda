@@ -1,0 +1,10 @@
+{
+	"images": [
+		{
+			"name": "tiles",
+			"path": "./assets/images/tiles.png",
+			"width": 304,
+			"height": 208
+		}
+	]
+}
