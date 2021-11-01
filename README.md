@@ -16,7 +16,7 @@ The Legend of Zelda is a top-down dungeon crawler where the player controls a sw
 
 ![Zelda](./images/Zelda2.jpg)
 
-_Image courtesy of [Breaking Canon](http://breakingcanon.com/the-legend-of-zelda/)_
+_Image from [Breaking Canon](http://breakingcanon.com/the-legend-of-zelda/)_
 
 ## 🔨 Setup
 
@@ -165,7 +165,7 @@ Zelda-2 adds enemies into the room. The enemies can hurt the hero upon collision
 
 ![Factory Design Pattern](./images/Factory-Design-Pattern.png)
 
-_Image courtesy of [Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)_
+_Image from [Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)_
 
 Recall that "design patterns" are battle-tested solutions for extremely common problems when developing software. The "problem" that we'll run into quickly when instantiating enemies is that the more enemies our game has, the more unruly it will get to instantiate them all. To tackle this issue, we'll put all code that instantiates new enemy classes inside of an `EnemyFactory` class.
 
@@ -300,7 +300,7 @@ Zelda-4 enables the player to walk through the doors into (procedurally generate
 
 ![Fixed Dungeon Map](./images/Fixed-Dungeon-Map.png)
 
-_Image courtesy of [Zelda Dungeon](https://www.zeldadungeon.net/the-legend-of-zelda-walkthrough/level-1-the-eagle/#c2_2)_
+_Image from [Zelda Dungeon](https://www.zeldadungeon.net/the-legend-of-zelda-walkthrough/level-1-the-eagle/#c2_2)_
 
 ### Events
 
