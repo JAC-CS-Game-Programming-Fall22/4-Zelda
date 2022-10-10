@@ -1,7 +1,5 @@
 # ⚔️ Zelda
 
-You can view the pretty version of the notes [here](https://jac-cs-game-programming-fall22.github.io/Notes/#/5-Zelda/).
-
 ## 🎯 Objectives
 
 - **Top-down Perspective**: With Flappy Bird and Mario, we were looking at the game world from the side. With Zelda, we'll have a bird's eye view of the world.
@@ -389,9 +387,9 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Homebrew_(video_games)):
 
 Below are some links that you may find useful if curious to learn more:
 
-- [NesDev Wiki](wiki.nesdev.org/w/index.php/Nesdev_Wiki)
-- [NesDev Programming Guide](wiki.nesdev.org/w/index.php/Programming_guide)
-- [NedDev Installing CC65](wiki.nesdev.org/w/index.php/Installing_CC65)
+- [NesDev Wiki](https://wiki.nesdev.org/w/index.php/Nesdev_Wiki)
+- [NesDev Programming Guide](https://wiki.nesdev.org/w/index.php/Programming_guide)
+- [NedDev Installing CC65](https://wiki.nesdev.org/w/index.php/Installing_CC65)
 
 ## 📚 References
 
