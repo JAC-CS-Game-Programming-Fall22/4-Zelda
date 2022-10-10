@@ -1,5 +1,7 @@
 # ⚔️ Zelda
 
+You can view the pretty version of the notes [here](https://jac-cs-game-programming-fall22.github.io/Notes/#/4-Zelda/).
+
 ## 🎯 Objectives
 
 - **Top-down Perspective**: With Flappy Bird and Mario, we were looking at the game world from the side. With Zelda, we'll have a bird's eye view of the world.
