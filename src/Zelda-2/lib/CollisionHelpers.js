@@ -5,7 +5,7 @@
  * axis aligned — meaning no rotation. The algorithm works by ensuring there is no gap
  * between any of the 4 sides of the rectangles. Any gap means a collision does not exist.
  *
- * https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection#axis-aligned_bounding_box
+ * @see https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection#axis-aligned_bounding_box
  *
  * @param {number} x1
  * @param {number} y1
@@ -20,7 +20,7 @@
 export const isAABBCollision = (x1, y1, width1, height1, x2, y2, width2, height2) => x1 + width1 >= x2 && x1 <= x2 + width2 && y1 + height1 >= y2 && y1 <= y2 + height2;
 
 /**
- * https://gamedev.stackexchange.com/questions/13774/how-do-i-detect-the-direction-of-2d-rectangular-object-collisions
+ * @see https://gamedev.stackexchange.com/questions/13774/how-do-i-detect-the-direction-of-2d-rectangular-object-collisions
  *
  * @returns The direction that the first rectangle collided with the second. 0: Up; 1: Down; 2: Left; 3: Right;
  */

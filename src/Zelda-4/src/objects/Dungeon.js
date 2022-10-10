@@ -136,6 +136,10 @@ export default class Dungeon {
 	}
 
 	resetRooms() {
+		if (!this.nextRoom) {
+			return;
+		}
+		
 		this.currentRoom.isShifting = false;
 		this.nextRoom.isShifting = false;
 		this.currentRoom = this.nextRoom;

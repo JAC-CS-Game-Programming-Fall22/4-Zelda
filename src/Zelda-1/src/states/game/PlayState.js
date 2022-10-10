@@ -13,8 +13,8 @@ export default class PlayState extends State {
 	}
 
 	enter() {
-		this.player.reset();
 		this.dungeon = new Dungeon(this.player);
+		this.player.reset();
 	}
 
 	update(dt) {

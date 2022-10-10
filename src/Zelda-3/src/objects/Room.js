@@ -82,13 +82,13 @@ export default class Room {
 	 * put them in an order such that entities higher on the screen will appear
 	 * behind entities that are lower down.
 	 *
-	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+	 * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 	 *
 	 * The spread operator (...) returns all the elements of an array separately
 	 * so that you can pass them into functions or create new arrays. What we're
 	 * doing below is combining both the entities and objects arrays into one.
 	 *
-	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+	 * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 	 */
 	buildRenderQueue() {
 		return [...this.entities, ...this.objects].sort((a, b) => {
@@ -166,7 +166,7 @@ export default class Room {
 	 * @returns An array containing the walls and floors of the room, randomizing the tiles for visual variety.
 	 */
 	generateWallsAndFloors() {
-		const tiles = [];
+		const tiles = new Array();
 
 		for (let y = 0; y < this.dimensions.y; y++) {
 			tiles.push([]);
@@ -234,7 +234,7 @@ export default class Room {
 	 * @returns An array of enemies for the player to fight.
 	 */
 	generateEntities() {
-		const entities = [];
+		const entities = new Array();
 		const sprites = Sprite.generateSpritesFromSpriteSheet(
 			images.get(ImageName.Enemies),
 			Tile.TILE_SIZE,

@@ -68,7 +68,7 @@ export default class Room {
 	 * @returns An array containing the walls and floors of the room, randomizing the tiles for visual variety.
 	 */
 	generateWallsAndFloors() {
-		const tiles = [];
+		const tiles = new Array();
 
 		for (let y = 0; y < this.dimensions.y; y++) {
 			tiles.push([]);

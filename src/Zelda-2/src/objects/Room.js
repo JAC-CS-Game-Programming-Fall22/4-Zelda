@@ -76,7 +76,7 @@ export default class Room {
 	 * put them in an order such that entities higher on the screen will appear
 	 * behind entities that are lower down.
 	 *
-	 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+	 * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 	 */
 	buildRenderQueue() {
 		return this.entities.sort((a, b) => {
@@ -146,7 +146,7 @@ export default class Room {
 	 * @returns An array containing the walls and floors of the room, randomizing the tiles for visual variety.
 	 */
 	generateWallsAndFloors() {
-		const tiles = [];
+		const tiles = new Array();
 
 		for (let y = 0; y < this.dimensions.y; y++) {
 			tiles.push([]);
@@ -194,7 +194,7 @@ export default class Room {
 	 * @returns An array of enemies for the player to fight.
 	 */
 	generateEntities() {
-		const entities = [];
+		const entities = new Array();
 		const sprites = Sprite.generateSpritesFromSpriteSheet(
 			images.get(ImageName.Enemies),
 			Tile.TILE_SIZE,

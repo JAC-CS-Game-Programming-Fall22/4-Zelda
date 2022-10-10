@@ -1,0 +1,39 @@
+node_modules/
+.vscode/
+.DS_Store
+__pycache__
+.idea
+env
+desktop.ini
+*.mkv
+*.m4v
+*.mp4
+*.tmp
+
+# This repo is my private one. I've created another one in public/ which is what the students will see.
+public/
+
+# Anything in a Template folder is a repo itself, so ignore it.
+Template/
+template/
+
+# All student submissions.
+Marking-Sandbox/
+
+# Files from other teachers.
+Past-Material/
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*

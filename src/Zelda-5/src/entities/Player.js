@@ -62,6 +62,8 @@ export default class Player extends GameEntity {
 		 * the player's dimensions and position to be used to detect collisions.
 		 */
 		this.hitboxOffsets = new Hitbox(0, Player.HEIGHT, 0, -Player.HEIGHT + 6);
+		this.position.x = Room.CENTER_X - Player.WIDTH / 2;
+		this.position.y = Room.CENTER_Y - Player.HEIGHT / 2;
 		this.dimensions.x = Player.WIDTH;
 		this.dimensions.y = Player.HEIGHT;
 		this.speed = Player.MAX_SPEED;

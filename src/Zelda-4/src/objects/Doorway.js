@@ -11,6 +11,7 @@ export default class Doorway extends GameObject {
 	static VERTICAL_HEIGHT = 32;
 	static HORIZONTAL_WIDTH = 32;
 	static HORIZONTAL_HEIGHT = 16;
+
 	static TOP_OPEN_SPRITES = [97, 98, 116, 117];
 	static BOTTOM_OPEN_SPRITES = [140, 141, 159, 160];
 	static LEFT_OPEN_SPRITES = [180, 181, 199, 200];
@@ -20,10 +21,10 @@ export default class Doorway extends GameObject {
 	static LEFT_CLOSE_SPRITES = [218, 219, 237, 238];
 	static RIGHT_CLOSE_SPRITES = [173, 174, 192, 193];
 
-	static shiftUp = new Event(EventName.ShiftUp);
-	static shiftDown = new Event(EventName.ShiftDown);
-	static shiftLeft = new Event(EventName.ShiftLeft);
-	static shiftRight = new Event(EventName.ShiftRight);
+	static SHIFT_UP = new Event(EventName.ShiftUp);
+	static SHIFT_DOWN = new Event(EventName.ShiftDown);
+	static SHIFT_LEFT = new Event(EventName.ShiftLeft);
+	static SHIFT_RIGHT = new Event(EventName.ShiftRight);
 
 	/**
 	 * One of four doors that appears on each side of a room.
@@ -207,19 +208,19 @@ export default class Doorway extends GameObject {
 
 		if (this.direction === Direction.Up) {
 			collider.position.x = this.position.x + collider.dimensions.x / 2;
-			canvas.dispatchEvent(Doorway.shiftUp);
+			canvas.dispatchEvent(Doorway.SHIFT_UP);
 		}
 		else if (this.direction === Direction.Down) {
 			collider.position.x = this.position.x + collider.dimensions.x / 2;
-			canvas.dispatchEvent(Doorway.shiftDown);
+			canvas.dispatchEvent(Doorway.SHIFT_DOWN);
 		}
 		else if (this.direction === Direction.Left) {
 			collider.position.y = this.position.y;
-			canvas.dispatchEvent(Doorway.shiftLeft);
+			canvas.dispatchEvent(Doorway.SHIFT_LEFT);
 		}
 		else {
 			collider.position.y = this.position.y;
-			canvas.dispatchEvent(Doorway.shiftRight);
+			canvas.dispatchEvent(Doorway.SHIFT_RIGHT);
 		}
 	}
 

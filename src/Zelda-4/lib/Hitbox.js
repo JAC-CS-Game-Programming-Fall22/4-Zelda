@@ -13,13 +13,16 @@ export default class Hitbox {
 	 * @param {string} colour
 	 */
 	constructor(x = 0, y = 0, width = 0, height = 0, colour = 'red') {
+		this.position = new Vector(x, y);
+		this.dimensions = new Vector(width, height);
 		this.colour = colour;
-		this.set(x, y, width, height);
 	}
 
 	set(x, y, width, height) {
-		this.position = new Vector(x, y);
-		this.dimensions = new Vector(width, height);
+		this.position.x = x;
+		this.position.y = y;
+		this.dimensions.x = width;
+		this.dimensions.y = height;
 	}
 
 	didCollide(target) {

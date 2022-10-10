@@ -1,5 +1,5 @@
 /**
- * States are only created as need, to save memory, reduce clean-up bugs and
+ * States are only created as needed, to save memory, reduce clean-up bugs and
  * increase speed due to garbage collection taking longer with more data in memory.
  *
  * States are added with a string identifier and a State object.
